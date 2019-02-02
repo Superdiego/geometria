@@ -6,6 +6,9 @@ public class Circulo_DCP extends FiguraGeometrica_DCP {
 	
 	public Circulo_DCP(double r, String tipoFigura) {
 		super(tipoFigura);
+		if (r<0) {
+			r=(-1)*r;
+		}
 		radio = r;
 	}
 
